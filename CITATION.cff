@@ -16,13 +16,13 @@ version: "1.1.0"
 date-released: "2026-05-13"
 
 authors:
-  - family-names: Case
-    given-names: Denise M.
+  - family-names: Massaquoi
+    given-names: Ralph
     orcid: "https://orcid.org/0000-0001-6165-7389"
     affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
 
-repository-code: "https://github.com/denisecase/datafun-02-automation"
-url: "https://github.com/denisecase/datafun-02-automation"
+repository-code: "https://github.com/nwmgraspr/custom-02-automation"
+url: "https://github.com/nwmgraspr/custom-02-automation"
 license: MIT
 
 abstract: >
