@@ -115,13 +115,13 @@ def create_files_from_list() -> None:
     LOG.info("FUNCTION 2: for loop over a list")
     LOG.info("========================")
 
-    LOG.info(f"Pet list: {PET_LIST}")
+    LOG.info(f"Vegetable list: {VEGETABLE_LIST}")
 
-    for pet_name in PET_LIST:
-        filename: str = f"case_{pet_name}.txt"
-        path: Path = PROCESSED_DIR / filename
-        content: str = f"Pet data for: '{pet_name}'\n"
-        write_text_file(path=path, content=content)
+for vegetable_name in VEGETABLE_LIST:
+    filename: str = f"case_{vegetable_name}.txt"
+    path: Path = PROCESSED_DIR / filename
+    content: str = f"Vegetable data for: '{vegetable_name}'\n"
+    write_text_file(path=path, content=content)
 
 
 # === DECLARE REPETITION FUNCTION 3: LIST COMPREHENSION ===
