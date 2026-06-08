@@ -1,9 +1,9 @@
 # Data Analytics Fundamentals
 
-This site provides documentation for this project.
+This site provides documentation for this customa automation project.
 Use the navigation to explore module-specific materials.
 
-Custom Project
+## Custom Automation
 Dataset
 
 The dataset used in this project is a Python list of vegetable names:
@@ -12,7 +12,7 @@ carrot, broccoli, spinach, cucumber, zucchini, tomato, bell_pepper
 
 This dataset is used to automatically generate text files in the data/processed/ directory. Each item in the list is processed through loops and list comprehensions to demonstrate file automation.
 
-Phase 4 Modification
+## Phase 4 Modification
 
 In Phase 4, I modified the original template project by replacing the pet-based dataset with a vegetable dataset. I updated all functions to reflect vegetables instead of animals. This included:
 
@@ -24,7 +24,7 @@ Ensuring all functions correctly write output files to data/processed/
 
 These changes allowed the program to run successfully and generate structured output files based on vegetables.
 
-Phase 5 Custom Project
+## Phase 5 Custom Project
 
 The final custom project demonstrates file automation using Python. The program generates multiple text files based on a list of vegetables. It uses different repetition techniques including:
 
