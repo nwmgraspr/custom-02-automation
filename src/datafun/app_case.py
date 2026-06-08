@@ -49,10 +49,10 @@ PROCESSED_DIR: Final[Path] = DATA_DIR / "processed"
 FIRST_QUARTER: Final[int] = 1
 LAST_QUARTER: Final[int] = 4
 
-PET_LIST: Final[list[str]] = ["dog", "cat", "fish"]
+VEGETABLE_LIST: Final[list[str]] = ["carrot", "broccoli", "spinach","cucumber", "zuchinni", "tomato","bell_pepper"]
 
 WAIT_SECONDS: Final[int] = 1
-FILE_COUNT: Final[int] = 3
+FILE_COUNT: Final[int] = 7
 
 
 # === DECLARE A HELPER FUNCTION TO WRITE A FILE ===
