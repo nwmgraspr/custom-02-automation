@@ -143,9 +143,9 @@ def create_files_using_list_comprehension() -> None:
 
     prefix: str = "favorite_"
 
-    LOG.info(f"Original list: {PET_LIST}")
-    favorite_list: list[str] = [f"{prefix}{name}" for name in PET_LIST]
-    LOG.info(f"Transformed list: {favorite_list}")
+  LOG.info(f"Original list: {VEGETABLE_LIST}")
+favorite_list: list[str] = [f"{prefix}{name}" for name in VEGETABLE_LIST]
+LOG.info(f"Transformed list: {favorite_list}")
 
     for favorite in favorite_list:
         filename: str = f"case_{favorite}.txt"
