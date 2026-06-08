@@ -49,7 +49,7 @@ PROCESSED_DIR: Final[Path] = DATA_DIR / "processed"
 FIRST_QUARTER: Final[int] = 1
 LAST_QUARTER: Final[int] = 4
 
-VEGETABLE_LIST: Final[list[str]] = ["carrot", "broccoli", "spinach","cucumber", "zuchinni", "tomato","bell_pepper"]
+VEGETABLE_LIST: Final[list[str]] = ["carrot", "broccoli", "spinach","cucumber", "zucchinni", "tomato","bell_pepper"]
 
 WAIT_SECONDS: Final[int] = 1
 FILE_COUNT: Final[int] = 7
