@@ -126,7 +126,6 @@ for vegetable_name in VEGETABLE_LIST:
 
 # === DECLARE REPETITION FUNCTION 3: LIST COMPREHENSION ===
 
-
 def create_files_using_list_comprehension() -> None:
     """Create one text file per item in a transformed list.
 
@@ -143,17 +142,17 @@ def create_files_using_list_comprehension() -> None:
 
     prefix: str = "favorite_"
 
-  LOG.info(f"Original list: {VEGETABLE_LIST}")
-favorite_list: list[str] = [f"{prefix}{name}" for name in VEGETABLE_LIST]
-LOG.info(f"Transformed list: {favorite_list}")
+    LOG.info(f"Original list: {VEGETABLE_LIST}")
+    favorite_list: list[str] = [
+        f"{prefix}{name}" for name in VEGETABLE_LIST
+    ]
+    LOG.info(f"Transformed list: {favorite_list}")
 
     for favorite in favorite_list:
         filename: str = f"case_{favorite}.txt"
         path: Path = PROCESSED_DIR / filename
-        content: str = f"Special data about: '{favorite}'\n"
+        content: str = f"Favorite vegetable: '{favorite}'\n"
         write_text_file(path=path, content=content)
-
-
 # === DECLARE REPETITION FUNCTION 4: WHILE LOOP ===
 
 
