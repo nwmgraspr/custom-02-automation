@@ -49,7 +49,15 @@ PROCESSED_DIR: Final[Path] = DATA_DIR / "processed"
 FIRST_QUARTER: Final[int] = 1
 LAST_QUARTER: Final[int] = 4
 
-VEGETABLE_LIST: Final[list[str]] = ["carrot", "broccoli", "spinach","cucumber", "zucchinni", "tomato","bell_pepper"]
+VEGETABLE_LIST: Final[list[str]] = [
+    "carrot",
+    "broccoli",
+    "spinach",
+    "cucumber",
+    "zucchinni",
+    "tomato",
+    "bell_pepper",
+]
 
 WAIT_SECONDS: Final[int] = 1
 FILE_COUNT: Final[int] = 7
@@ -126,6 +134,7 @@ def create_files_from_list() -> None:
 
 # === DECLARE REPETITION FUNCTION 3: LIST COMPREHENSION ===
 
+
 def create_files_using_list_comprehension() -> None:
     """Create one text file per item in a transformed list.
 
@@ -143,9 +152,7 @@ def create_files_using_list_comprehension() -> None:
     prefix: str = "favorite_"
 
     LOG.info(f"Original list: {VEGETABLE_LIST}")
-    favorite_list: list[str] = [
-        f"{prefix}{name}" for name in VEGETABLE_LIST
-    ]
+    favorite_list: list[str] = [f"{prefix}{name}" for name in VEGETABLE_LIST]
     LOG.info(f"Transformed list: {favorite_list}")
 
     for favorite in favorite_list:
@@ -153,6 +160,8 @@ def create_files_using_list_comprehension() -> None:
         path: Path = PROCESSED_DIR / filename
         content: str = f"Favorite vegetable: '{favorite}'\n"
         write_text_file(path=path, content=content)
+
+
 # === DECLARE REPETITION FUNCTION 4: WHILE LOOP ===
 
 
